@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PiuPiuwer - Login</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../img/logo-1.png">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/base.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/login.css"> <!-- Referência do arquivo css -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <div class="header">
+            <ul class="itens-header">
+                <li><img class="logo-header" src="../img/logo-1.png"></li>  
+                <li class="page-title">PiuPiuwer - Login</li>
+                <!--<li><h1>PiuPiuwer</h1></li> -->
+                <li><input id="busca" placeholder="Buscar"></li>
+                <div class="user">
+                    <li class="username"><p>Faça seu login</p></li>
+                    <li><img class="foto-perfil" src="../img/logo-1.png"></li>
+                </div>
+            </ul>
+        </div>
+       
+        <main>
+            <div class="entrar">
+                <form>
+                    <Fieldset>
+                        <legend>Faça seu Login:</legend>
+                        <label for="user-nick">Usuário:</label>
+                        <input id="user-nick" name="user-id" type="text" placeholder="@" required autofocus pattern="[A-Za-z0-9]*">
+                        <label for="pass">Senha:</label>
+                        <input id="pass" type="password" name="password" placeholder="Digite sua senha" required pattern="[]{6,}" title="A senha possui no mínimo 6 caracteres">
+                        <input type="checkbox" id="lembrar-user">
+                        <label for="lembrar-user">Lembrar de mim</label>
+                    </Fieldset>
+                        <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <div class="cadastro">
+                <form>
+                    <Fieldset>
+                        <legend>Não é um piuwer?   Cadastre-se!</legend>
+                        <label for="new-user-nick">Usuário:</label>
+                        <input id="new-user-nick" name="user-id" type="text" placeholder="@" required pattern="[A-Za-z0-9]*">
+                        <label for="new-e-mail">E-mail:</label>
+                        <input id="new-e-mail" type="email" placeholder="seuemail@provedor.com" required>
+                        <label for="new-pass">Senha:</label>
+                        <input id="new-pass" type="password" name="password" placeholder="Digite sua senha" required pattern="[]{6,}" title="A senha deve possuir no mínimo 6 caracteres">
+                        <label for="new-pass-2">Repita a senha:</label>
+                        <input id="new-pass-2" type="password" name="password-2" placeholder="Repita sua senha" required pattern="[]{6,}" title="A senha deve possuir no mínimo 6 caracteres">
+                    </Fieldset>
+                        <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </main>
+
+
+        <footer>
+                <a href="../html/login.html" class="PJ-copy">&copy; PiuPiuwer 2018</a>
+            <a href="http://www.polijunior.com.br/"><img class="logo-pj" src="../img/pj.png"></a>
+        </footer>
+
+    </body>
+
+</html>

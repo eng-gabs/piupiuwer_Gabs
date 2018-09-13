@@ -1,0 +1,30 @@
+#bio{
+    margin: auto;
+    width: 700px;
+    height: 200px;
+    text-align: left;
+    font-family: Arial;
+    font-size: 1.2em;
+    padding: 1em;
+    background-color: rgba(255,255,255, .8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#bio-info{
+    float: right;
+    position: relative;
+    bottom: 8em;
+    right: 5em;
+
+}
+ul li {
+    padding: 1px;
+}
+
+#bio-foto-perfil{
+    width: 8em;
+    margin: 1px;
+}
+#bio-foto-perfil:hover{
+    transform: none;
+}

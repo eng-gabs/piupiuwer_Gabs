@@ -1,0 +1,86 @@
+.entrar, .cadastro {
+    margin: auto;
+    width: 330px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    border: none;
+    border-radius: .5em;
+    padding: 3em;
+    background-color: rgba(255,255,255,.7);
+}
+
+.cadastro{
+    margin-block-start: 3em;
+}
+
+legend {
+    color: orange;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+label[for]{
+    display: block;
+    color: orange;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: .5em;
+    margin-left: auto;
+
+
+}
+
+label[for="lembrar-user"]{
+    display: inline;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    /* Força o navegador a usar a mesma fonte da página */
+    font-family: inherit;
+    /* Inclusive o tamanho dela */
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: .1px solid black;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #FFD;
+    box-shadow: 0 0 5px lightblue;
+}
+
+
+
+button {
+    /* Precisamos tirar a borda que o navegador coloca por padrão */
+    border: 0;
+    padding: .5em 1em;
+    font-family: 'Open Sans', sans-serif;
+    background-color: orange;
+    color: white;
+    font-size: 1.2em;
+    /* Faz com que o botão apareça na direita */
+    margin-left: auto;
+    margin-top: 1em;
+    display: block;
+    border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+    background-color: #8C1D3D;
+}

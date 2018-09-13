@@ -1,0 +1,132 @@
+body {
+    /*background-color: #6FBBCF; */
+    background-image: linear-gradient(180deg,#50BAFF, white);
+    width: 100%;
+}
+
+.header {
+    /*background-color: #F59033;*/
+    background-color: #50BAFF;
+    color: white;
+    width: 100%;
+    padding: 0.7em;
+    box-sizing: border-box;
+    box-shadow: 1px 1px .5em #000;
+    position: fixed;
+    z-index: 1;
+    font-weight: bold;
+    animation: descida 1s;
+ 
+}
+
+@keyframes descida{
+    0%{
+        position: relative;
+        top:-100px;
+    }
+    100%{
+        top:0px;
+    }
+}
+
+.logo-header {
+    width: 3rem;
+}
+.itens-header li {
+    display: inline-block;
+}
+#busca{
+    background-color: white;
+    color: black;
+    width: 10em;
+    height: 2em;
+    padding: .5em;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 10px;
+    right: 24em;
+    top: 2em;
+    position: fixed;
+    font-weight: 100;
+    transform: scale(1.5);
+
+}
+
+.page-title{
+    font-family: arial;
+    font-size: 1.2em;
+}
+
+.user {
+    position: fixed;
+    right: 1em;
+    top: .33em;
+}
+.username {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: relative;
+    bottom: .5em;
+    right: .3em;
+}
+.foto-perfil {
+    border-radius: 50%;
+    border: .1em solid white;
+    width: 3em;
+    box-shadow: 1px 1px #000;
+    transition: .2s;
+}
+
+.foto-perfil:hover{
+    transform: scale(1.1);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    position: relative;
+    bottom: 0.5rem;
+    text-shadow: 1px 1px #000;
+}
+
+main{
+    position: relative;
+    top: 70px;
+    margin-block-end: 200px;
+}
+
+footer { 
+    background-color:rgba(0,142,178,.3);
+    width: 100%;
+    height: 6%;
+    bottom: 0;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+footer .PJ-copy {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: 1em;
+    left: 1em;
+    float: left;
+    text-decoration: none;
+}
+
+footer .logo-pj {
+    float: right;
+    position: relative;
+    right: 1em;
+    height: 40px;
+    transition: .2s;
+}
+footer .logo-pj:hover{
+    transform: scale(1.2);
+}
