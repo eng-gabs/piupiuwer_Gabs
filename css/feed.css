@@ -17,17 +17,18 @@
     transition: .3s;
     border-style: none;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     padding: 1ch;
     width: 30em;
     height: 5em;
+    resize: none;
 }
 
 input:focus, textarea:focus{
     box-shadow: 0 0 0 999999px rgba(0,0,0, .6);
-    transform: scale(1.1);
     top: 50px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .pergunta-piu{
@@ -47,9 +48,10 @@ button{
     height: 60px;
     text-transform: lowercase; 
     margin-left: 2em;
+    z-index: 1;
 }
 
-.botao-piu:hover {
+#botao-piu:hover {
     color: rgba(241,90,36,.0);
     background-image: url(../img/logo-1.png);
     background-size: 50%;
@@ -88,6 +90,7 @@ button{
     background-color: rgba(255,255,255, .6);
     box-sizing: border-box;
     height: 145px;
+    animation: showFeed 1s;
 }
 .user-id {
     color: black;
@@ -119,3 +122,31 @@ button{
     display: inline-block;
     padding: 5px;
 }
+
+#conta-caracteres{
+    position: relative;
+    margin-left: 1em;
+    z-index: 1;
+}
+
+
+.estouraContadorVisual{
+    color: rgb(255,20,20);
+    font-weight: bold;
+}
+
+.estouraPost{
+    background-color: lightcoral;
+}
+
+.focused{
+    z-index: 5;
+    transition: .3s;
+}
+
+.digite-algo{
+    background-color: lightgoldenrodyellow;
+    transition: .5s;
+}
+
+

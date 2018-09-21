@@ -1,6 +1,6 @@
 body {
-    /*background-color: #6FBBCF; */
-    background-image: linear-gradient(180deg,#50BAFF, white);
+    background-color: #C7EEFF;
+    /*background-image: linear-gradient(180deg,#50BAFF, white);*/
     width: 100%;
 }
 
@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
     box-shadow: 1px 1px .5em #000;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     font-weight: bold;
     animation: descida 1s;
  
@@ -129,4 +129,38 @@ footer .logo-pj {
 }
 footer .logo-pj:hover{
     transform: scale(1.2);
+}
+
+.mensagem{
+    z-index: 6;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: lightsalmon;
+    position: fixed;
+    transition:.2s;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding:10px;
+    width: 30%;
+    height: 5%;
+    background-color: white;
+    box-shadow: 0 0 0 999999px rgba(0,0,0, .6);
+    border-radius: 10px;
+}
+
+.botaoOK{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    display: block;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    background-color: #50BAFF;
+    padding: 5px;
+    border-radius: 2px;
+
 }
