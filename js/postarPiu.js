@@ -69,7 +69,13 @@ botaoPiu.addEventListener("click", function(){
         var pFoto = document.createElement("p");
         var caixa = document.createElement("li");
         var p = document.createElement("p");
-        var postOptions = document.createElement("li");
+        var postOptionsLI = document.createElement("li");
+        var replyLink = document.createElement("a");
+        var starLink = document.createElement("a");
+        var likeLink = document.createElement("a");
+        var replyImg = document.createElement("img");
+        var starImg = document.createElement("img");
+        var likeImg = document.createElement("img");
         var postData = document.createElement("time");
 
         p.textContent = post.value;
@@ -83,7 +89,13 @@ botaoPiu.addEventListener("click", function(){
         fotoDePerfil.appendChild(pFoto);
         ul.appendChild(caixa);
         caixa.appendChild(p);
-        ul.appendChild(postOptions);
+        ul.appendChild(postOptionsLI);
+        postOptionsLI.appendChild(replyLink);
+        postOptionsLI.appendChild(starLink);
+        postOptionsLI.appendChild(likeLink);
+        replyLink.appendChild(replyImg);
+        starLink.appendChild(starImg);
+        likeLink.appendChild(likeImg);
         novoPost.appendChild(postData);
 
         feed.classList.add("feed");
@@ -93,6 +105,13 @@ botaoPiu.addEventListener("click", function(){
         aFoto.href = "../html/perfil.html";
         imgFoto.src = "../img/Perfil.jpg";
         imgFoto.classList.add("foto-perfil");
+        postOptionsLI.classList.add("post-options");
+        replyImg.classList.add("reply");
+        starImg.classList.add("star");
+        likeImg.classList.add("like");
+        replyImg.src = "../img/reply.png";
+        starImg.src = "../img/star.png";
+        likeImg.src = "../img/like.png";
 
         // cria data
         postData.dateTime = new Date();

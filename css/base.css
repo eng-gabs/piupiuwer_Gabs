@@ -75,6 +75,7 @@ body {
     width: 3em;
     box-shadow: 1px 1px #000;
     transition: .2s;
+    cursor: pointer;
 }
 
 .foto-perfil:hover{

@@ -56,7 +56,8 @@ button{
     background-image: url(../img/logo-1.png);
     background-size: 50%;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .feed {
@@ -109,15 +110,28 @@ button{
 }
 .post-data{
     color: black;
-}
-
-.post-options{
-    color: white;
-    text-decoration: none;
     position: relative;
-    bottom: 2em;
 }
 
+.post-options a{
+    position: relative;
+    top: 1em;
+    display: -moz-grid;
+    display: grid;
+}
+
+.reply, .star, .like, .stared, .liked{
+    text-decoration: none;
+    width: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+.star{
+    background: url("../img/star.png") no-repeat;
+}
+.stared{
+    background: url("../img/stared.png") no-repeat;
+}
 .post li {
     display: inline-block;
     padding: 5px;
