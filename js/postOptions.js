@@ -1,24 +1,4 @@
-
-/*
-var botoesStar = document.querySelectorAll(".star");
-botoesStar.forEach(function(botaoStar){
-    var clicado = false;
-    botaoStar.addEventListener("click", function(){
-        if(clicado){
-            botaoStar.src = "../img/star.png";
-            clicado = false;
-        } else {
-            botaoStar.src = "../img/stared.png";
-            clicado = true;
-        }
-    });
-});
-*/
-
-var botoesStar = document.querySelectorAll(".star");
-
-var feed = document.querySelector(".feed");
-
+var feed = document.querySelector("#feed");
 feed.addEventListener("click", function(event){
 
     if(event.target.src == "file:///Users/gabrielduarte/Drive%20Pessoal/dev/piupiuwer_Gabs/img/star.png"){

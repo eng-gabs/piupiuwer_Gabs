@@ -32,14 +32,14 @@
                 <div id="conta-caracteres" >0/140</div>
                 <button type="submit" id="botao-piu">Piu!</button>
             </div>
-        
-            <div class="feed">
+            <div><img id="refresh" src="../img/refresh.png"></div>
+            <div id="feed">
                 <!-- <p>FEED</p> -->
 
 
                 <div class="post">
                         <ul>
-                            <li class="user-id"><a href="../html/perfil.html"></a><img src="../img/Perfil.jpg" class="foto-perfil"><p>@gabs</p></li>
+                            <li class="user-id"><a href="../html/perfil.html"></a><img src="../img/Perfil.jpg" class="foto-perfil"></li>
                             <li class="caixa"><p>Teste 2</p></li>
                             <li class="post-options">
                                 <a><img class="reply" src="../img/reply.png"></a>
@@ -47,8 +47,13 @@
                                 <a><img class="like" src="../img/like.png"></a>
                             </li>
                         </ul>
-                        <time datetime="Fri Sep 21 2018 12:11:00 GMT-0300 (-03)" class="post-data">21 de Setembro de 2018</time>
+                        <div class="info">
+                            <p>@gabs</p>
+                            <time datetime="Fri Sep 21 2018 12:11:00 GMT-0300 (-03)" class="post-data">21 de Setembro de 2018</time>
+                        </div>
                 </div>
+            
+            </div>
 
                 
 
@@ -59,7 +64,9 @@
             <a href="http://www.polijunior.com.br/"><img class="logo-pj" src="../img/pj.png"></a>
         </footer>
 
+        <script src="../js/carregaFeed.js"></script>
         <script src="../js/postarPiu.js"></script>
+        <script src="../js/editPost.js"></script>
         <script src="../js/postOptions.js"></script>
 
     </body>
